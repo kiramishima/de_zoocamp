@@ -116,7 +116,7 @@ SELECT
  JOIN taxi_zones zdo on gtt."DOLocationID" = zdo."LocationID"
  WHERE lpep_pickup_datetime::DATE = MAKE_DATE(2019, 9, 18)
  GROUP BY pick_up_loc
- ORDER BY total DESC
+ ORDER BY total DESC;
 ```
 
 R= `"Brooklyn" "Manhattan" "Queens"`
@@ -135,15 +135,15 @@ Note: it's not a typo, it's `tip` , not `trip`
 
 ```sql
 SELECT
-     zdo."Zone" dropoff_loc,
-     MAX(tip_amount) max_tip
- FROM green_taxi_trips gtt
-     INNER JOIN taxi_zones zpu on gtt."PULocationID" = zpu."LocationID"
-     INNER JOIN taxi_zones zdo on gtt."DOLocationID" = zdo."LocationID"
- WHERE lpep_pickup_datetime::DATE BETWEEN MAKE_DATE(2019, 9, 1) AND MAKE_DATE(2019, 9, 30)
-   AND zpu."Zone" = 'Astoria'
- GROUP BY dropoff_loc
- ORDER BY max_tip DESC;
+    zdo."Zone" dropoff_loc,
+    MAX(tip_amount) max_tip
+FROM green_taxi_trips gtt
+    INNER JOIN taxi_zones zpu on gtt."PULocationID" = zpu."LocationID"
+    INNER JOIN taxi_zones zdo on gtt."DOLocationID" = zdo."LocationID"
+WHERE lpep_pickup_datetime::DATE BETWEEN MAKE_DATE(2019, 9, 1) AND MAKE_DATE(2019, 9, 30)
+  AND zpu."Zone" = 'Astoria'
+GROUP BY dropoff_loc
+ORDER BY max_tip DESC;
 ```
 
 R= `JFK Airport`
