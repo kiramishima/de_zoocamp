@@ -1,2 +1,9 @@
 week_1/terraform/main.tf
 week_1/terraform/variables.tf
+week_2/scripts/data_exporters/__init__.py
+week_2/scripts/data_loaders/__init__.py
+week_2/scripts/pipelines/__init__.py
+week_2/scripts/pipelines/green_taxi_etl/__init__.py
+week_2/scripts/pipelines/test_bq/__init__.py
+week_2/scripts/pipelines/test_pg_connection/__init__.py
+week_2/scripts/transformers/__init__.py
