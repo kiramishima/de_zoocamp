@@ -1,0 +1,30 @@
+[0m21:54:58.426378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F2351E720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F22EECEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F2351E840>]}
+
+
+============================== 21:54:58.518676 | aaa90363-4caa-4b15-9593-ec1e31a8f975 ==============================
+[0m21:54:58.518676 [info ] [MainThread]: Running with dbt=1.7.7
+[0m21:54:58.520916 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\kiramishima\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m21:54:58.523131 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/kiramishima/.dbt')}
+[0m21:54:58.525908 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m21:56:13.744486 [debug] [MainThread]: Starter project path: D:\ProgramData\Anaconda3\envs\data_engineer\Lib\site-packages\dbt\include\starter_project
+[0m21:56:14.082515 [info ] [MainThread]: 
+Your new dbt project "green_taxi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:56:14.087493 [info ] [MainThread]: Setting up your profile.
+[0m22:19:23.709822 [info ] [MainThread]: Profile green_taxi written to C:\Users\kiramishima\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m22:19:23.733993 [debug] [MainThread]: Command `dbt init` succeeded at 22:19:23.713890 after 1465.36 seconds
+[0m22:19:23.735019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F22E709B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F2246B8F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014F1CE5F260>]}
+[0m22:19:23.735998 [debug] [MainThread]: Flushing usage events
