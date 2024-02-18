@@ -1,0 +1,13 @@
+# put your configuration values here
+
+[runtime]
+log_level="WARNING"  # the system log level of dlt
+# use the dlthub_telemetry setting to enable/disable anonymous usage data reporting, see https://dlthub.com/docs/telemetry
+dlthub_telemetry = true
+
+[destination]
+# set the optimized replace strategy
+replace_strategy = "staging-optimized"
+
+[destination.postgres]
+create_indexes=false
