@@ -14,6 +14,7 @@ fhv_data AS (
         AND affiliated_base_number IS NOT NULL
 )
 SELECT 
+    fhv_data.trip_id,
     fhv_data.service_type,
     fhv_data.dispatching_base_num,
     fhv_data.pickup_datetime,
