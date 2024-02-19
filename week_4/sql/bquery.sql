@@ -29,7 +29,7 @@ CREATE OR REPLACE TABLE `taxi_trips_bq.fhv_taxi_data` AS
 SELECT * FROM taxi_trips_bq.external_fhv_data;
 
 
--- Check if dashboard is correct
+-- Metabase SQL Question
 WITH tripsdata AS (
     SELECT service_type, COUNT(*) 
     FROM `dbt_parizpe.fact_trips`
