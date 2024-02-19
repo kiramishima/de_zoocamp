@@ -1,6 +1,7 @@
 {{ config(materialized='view') }}
 
 SELECT
+    {{ dbt_utils.generate_surrogate_key(['dispatching_base_num', 'pickup_datetime']) }} as trip_id,
     CAST(dispatching_base_num AS STRING) AS dispatching_base_num,
     -- timestamps
     TIMESTAMP_MICROS(CAST(pickup_datetime / 1000 AS INT64)) AS pickup_datetime,
