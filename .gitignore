@@ -9,3 +9,6 @@ week_2/scripts/pipelines/test_pg_connection/__init__.py
 week_2/scripts/transformers/__init__.py
 workshops/Workshop 1 - Data Ingestion/dlt_ipykernel_launcher.duckdb.wal
 workshops/Workshop 1 - Data Ingestion/dlt_ipykernel_launcher.duckdb
+week_5/data/raw/fhv/2019/10/fhv_tripdata_2019-10.csv.gz
+week_5/data/raw/zones/taxi_zone_lookup.csv
+week_5/data/pq/fhv/2019/10/*
